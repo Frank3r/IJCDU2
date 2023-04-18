@@ -2,8 +2,8 @@
 // Created by frara on 18.04.2023.
 //
 
-#ifndef IJCDU2_2_HTAB_PAIR_H
-#define IJCDU2_2_HTAB_PAIR_H
+#ifndef IJCDU2_2_HTAB_ITEM_H
+#define IJCDU2_2_HTAB_ITEM_H
 
 #include "htab.h"
 
@@ -14,4 +14,4 @@ struct htab_item{
 
 typedef struct htab_item htab_item_t;
 
-#endif //IJCDU2_2_HTAB_PAIR_H
+#endif //IJCDU2_2_HTAB_ITEM_H
