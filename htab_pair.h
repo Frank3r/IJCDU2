@@ -9,7 +9,7 @@
 
 struct htab_item{
     struct htab_pair* next;
-    struct htab_pair htabPair;
+    struct htab_pair pair;
 };
 
 #endif //IJCDU2_2_HTAB_PAIR_H
