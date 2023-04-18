@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "htab.h"
-#include "htab_pair.h"
+#include "htab_item.h"
 
 struct htab{
     size_t size;
