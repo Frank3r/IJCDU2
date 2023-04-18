@@ -12,4 +12,6 @@ struct htab_item{
     struct htab_pair pair;
 };
 
+typedef struct htab_item htab_item_t;
+
 #endif //IJCDU2_2_HTAB_PAIR_H
