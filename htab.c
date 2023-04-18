@@ -30,7 +30,7 @@ htab_t *htab_init(const size_t n){
     tab= malloc(sizeof(struct htab));
     if(tab==NULL){
         fprintf(stderr,"Error allocating htab");
-        exit(1);
+        return NULL;
     }
     tab->size=0;
     tab->arr_size=n;
@@ -39,7 +39,7 @@ htab_t *htab_init(const size_t n){
     if(tab->arr_ptr==NULL){
         fprintf(stderr,"Error allocating htab");
         free(tab);
-        exit(0);
+        return NULL;
     }
     return tab;
 }
@@ -53,19 +53,19 @@ size_t htab_bucket_count(const htab_t * t){
 }
 
 htab_pair_t * htab_find(const htab_t * t, htab_key_t key){
-    size_t key_hash= htab_hash_function(key);
-    htab_item_t *cur_ptr=NULL;
-    for(size_t i = 0; i < t->arr_size;i++){
-        if(t->arr_ptr[i]==NULL){ // firsthand empty check
-            continue;
+    size_t keyhash= htab_hash_function(key);
+    size_t bucket= keyhash % t->arr_size;
+    htab_item_t *cur_ptr=t->arr_ptr[bucket];
+    while(cur_ptr!=NULL){
+        if(keyhash == htab_hash_function(cur_ptr->pair.key)){
+            return &cur_ptr->pair;
         }
-        cur_ptr=t->arr_ptr[i];
-        while(cur_ptr!=NULL){
-            if(key_hash== htab_hash_function(cur_ptr->pair.key)){
-                return &cur_ptr->pair;
-            }
-        }
+        cur_ptr= cur_ptr->next;
     }
     return NULL;
+}
+
+htab_pair_t * htab_lookup_add(htab_t * t, htab_key_t key){
+
 }
 
