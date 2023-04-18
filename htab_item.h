@@ -8,7 +8,7 @@
 #include "htab.h"
 
 struct htab_item{
-    struct htab_pair* next;
+    struct htab_item* next;
     struct htab_pair pair;
 };
 
