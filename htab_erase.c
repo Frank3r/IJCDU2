@@ -9,8 +9,9 @@ bool htab_erase(htab_t * t, htab_key_t key){
     htab_item_t *prev_ptr=t->arr_ptr[bucket];
     while(cur_ptr!=NULL){
         if(keyhash == htab_hash_function(cur_ptr->pair.key)){
-            prev_ptr->next=cur_ptr->next;
+            prev_ptr->next=cur_ptr->next; // does not matter if its NULL
             free((void*)cur_ptr->pair.key);
+            free(cur_ptr);
             t->size--;
             return true;
         }

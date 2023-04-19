@@ -13,4 +13,5 @@ void htab_clear(htab_t * t){
             cur_ptr=next_ptr;
         }
     }
+    t->size=0;
 }

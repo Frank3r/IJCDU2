@@ -1,6 +1,6 @@
 CC:= gcc
-CFLAGS:= -fsanitize=address -Wextra -Wall -O2 -pedantic
-
+CFLAGS:= -Wextra -Wall -O2 -pedantic
+# CFLAGS+= -fsanitize=address
 
 all:tail wordcount wordcount-dynamic
 

@@ -12,10 +12,8 @@ int loadWords(char buffer[], int bufferSize) {
             buffer[index++] = (char)c;
         }
     }
-    // Add null terminator at the end of the buffer
     buffer[index] = '\0';
 
-    // Check if EOF is reached
     if (feof(stdin)) {
         return 0;
     }
