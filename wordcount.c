@@ -1,3 +1,10 @@
+/*
+ *  Frantisek Sedlacek
+ *  VUT FIT Brno
+ *  Priklad: IJC-DU2
+ *  19.04. 2023
+ */
+
 #include <stdio.h>
 #include "htab.h"
 

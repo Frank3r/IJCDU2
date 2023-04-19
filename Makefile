@@ -1,3 +1,12 @@
+#
+#	Frantisek Sedlacek
+#	VUT FIT Brno
+#	Priklad: IJC-DU2
+#	19.04. 2023
+#
+
+
+
 CC:= gcc
 CFLAGS:= -Wextra -Wall -O2 -pedantic
 # CFLAGS+= -fsanitize=address

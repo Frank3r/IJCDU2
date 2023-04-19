@@ -1,6 +1,9 @@
-//
-// Created by franker on 19/04/23.
-//
+/*
+ *  Frantisek Sedlacek
+ *  VUT FIT Brno
+ *  Priklad: IJC-DU2
+ *  19.04. 2023
+ */
 
 #ifndef IJCDU2_2_HTAB_PRIVATE_H
 #define IJCDU2_2_HTAB_PRIVATE_H
