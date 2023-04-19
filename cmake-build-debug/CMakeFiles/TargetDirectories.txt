@@ -1,3 +1,3 @@
-C:/Users/frara/CLionProjects/IJCDU2-2/cmake-build-debug/CMakeFiles/IJCDU2_2.dir
-C:/Users/frara/CLionProjects/IJCDU2-2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/frara/CLionProjects/IJCDU2-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/franker/CLionProjects/IJCDU2-2/cmake-build-debug/CMakeFiles/IJCDU2_2.dir
+/home/franker/CLionProjects/IJCDU2-2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/franker/CLionProjects/IJCDU2-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
