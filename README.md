@@ -11,4 +11,4 @@ Projekt se skládá ze dvou částí:
 Makefile se stará o správnou skladbu programů, ale nestará se o dodání dynamické knihovny k `wordcount-dynamic`,
 proto je třeba přidat knihovnu do globálních proměnných ručně.
 
-Toto repo budu archivovat poté, co dostanu hodnocení.
+Hodnocení tohoto projektu je 13/15 bodů. Jelikož Makefile nesložil jednu z knihoven správně k použití.
